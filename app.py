@@ -9,7 +9,7 @@ import gdown
 import os
 
 # === THÔNG SỐ CẤU HÌNH ===
-FILE_ID = '1fzUxf9l29TU8ZtQvjHui3cQ6slTNs2FF'
+FILE_ID = '1fzUxf9l29TU8ZtQvjHui3cQ6slTNs2FF' #Copy ID của file excel chia sẻ vào đây
 FILE_NAME = 'du_lieu_mau.xlsx'
 OWNER_HOSTNAME = 'TEN_MAY_CUA_BAN'
 
@@ -34,7 +34,7 @@ if not os.path.exists(FILE_NAME):
 
 try:
     df = pd.read_excel(FILE_NAME)
-    st.success("✅ Dữ liệu đã được đọc thành công.")
+    #st.success("✅ Dữ liệu đã được đọc thành công.")
 except Exception as e:
     st.error(f"❌ Lỗi khi đọc file Excel: {e}")
     st.stop()
@@ -168,9 +168,6 @@ else:
         st.markdown(generate_analysis(
             f"Số lượng thí sinh chọn thi từng môn tổ hợp (trừ Toán, Văn): {subject_counts}"
         ))
-
-
-
 
 
 # ======= PHẦN 2: Biểu đồ điểm trung bình theo Môn =======
