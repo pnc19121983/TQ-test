@@ -56,7 +56,7 @@ def generate_analysis(prompt_text):
             model = genai.GenerativeModel("gemini-1.5-flash")
             default_instruction = (
                 "Hãy phân tích dữ liệu dưới đây theo cấu trúc:\n"
-                "- Đơn vị nào có kết quả tốt, đơn vị nào có kết quả yếu kém?\n"
+                "- Đối tượng nào có kết quả tốt, đối tượng nào có kết quả yếu kém?\n"
                 "- Nguyên nhân của chất lượng yếu kém là gì?\n"
                 "- Đề xuất hướng khắc phục cho các yếu kém đó.\n\n"
             )
