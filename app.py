@@ -284,6 +284,8 @@ if st.checkbox("📌 Đánh giá bằng AI", key="ai4"):
 # ======= PHẦN 8 & 9: Chỉ hiển thị khi đã chọn lớp cụ thể =======
 if selected_school != "Toàn trường":
 
+    st.info("ℹ️ Hãy chọn một lớp cụ thể để xem thêm thống kê học sinh.")
+
     # ======= PHẦN 8: Biểu đồ điểm trung bình từng học sinh =======
     st.subheader("👨‍🎓 Biểu đồ điểm trung bình từng học sinh")
 
