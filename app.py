@@ -281,10 +281,10 @@ if st.checkbox("📌 Đánh giá bằng AI", key="ai4"):
     st.markdown("### 🧠 Nhận định & đề xuất từ AI:")
     st.markdown(generate_analysis(f"So sánh điểm trung bình các môn thi giữa trường '{selected_school}' và toàn tỉnh.\nLớp: {subject_means_filtered.to_dict()}\nToàn trường: {subject_means_all.to_dict()}"))
 
+st.info("ℹ️ Hãy chọn một lớp cụ thể để xem thêm thống kê học sinh.")
+
 # ======= PHẦN 8 & 9: Chỉ hiển thị khi đã chọn lớp cụ thể =======
 if selected_school != "Toàn trường":
-
-    st.info("ℹ️ Hãy chọn một lớp cụ thể để xem thêm thống kê học sinh.")
 
     # ======= PHẦN 8: Biểu đồ điểm trung bình từng học sinh =======
     st.subheader("👨‍🎓 Biểu đồ điểm trung bình từng học sinh")
